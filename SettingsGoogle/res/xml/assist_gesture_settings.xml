@@ -24,21 +24,24 @@
         app:textEnd="@string/assist_gesture_squeeze_help_minimum_sensitivity"
         app:textStart="@string/assist_gesture_squeeze_help_maximum_sensitivity" />
 
-    <SwitchPreference
+    <com.android.settings.preferences.ui.AdaptiveSwitchPreference
         android:key="gesture_assist"
+        settings:position="solo"
         android:summary="@string/assist_gesture_setting_enable_assistant_text"
         android:title="@string/assist_gesture_setting_enable_assistant_title"
         app:controller="com.google.android.settings.gestures.assist.AssistGesturePreferenceController"
         app:keywords="@string/keywords_assist_gesture_launch" />
 
-    <SwitchPreference
+    <com.android.settings.preferences.ui.AdaptiveSwitchPreference
         android:key="gesture_assist_wake"
+        settings:position="solo"        
         android:title="@string/assist_gesture_setting_enable_wake_title"
         app:controller="com.google.android.settings.gestures.assist.AssistGestureWakePreferenceController"
         app:keywords="@string/keywords_assist_gesture_wake" />
 
-    <SwitchPreference
+    <com.android.settings.preferences.ui.AdaptiveSwitchPreference
         android:key="gesture_assist_silence"
+        settings:position="solo"
         android:summary="@string/assist_gesture_setting_enable_ring_silence_text"
         android:title="@string/assist_gesture_setting_enable_ring_silence_title"
         app:controller="com.google.android.settings.gestures.assist.AssistGestureSilenceAlertsPreferenceController"
