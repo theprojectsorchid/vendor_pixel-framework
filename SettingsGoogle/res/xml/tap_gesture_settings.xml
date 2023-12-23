@@ -2,7 +2,7 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/gesture_tap_title">
+    android:title=" ">
 
     <com.android.settings.widget.VideoPreference
         android:key="gesture_tap_video"
@@ -10,6 +10,7 @@
         settings:preview="@drawable/gesture_tap" />
 
     <SwitchPreference
+        android:layout="@layout/SwitchPreferenceFull_Card"         
         android:key="gesture_tap_toggle"
         android:summary="@string/gesture_tap_summary"
         android:title="@string/gesture_tap_title"
