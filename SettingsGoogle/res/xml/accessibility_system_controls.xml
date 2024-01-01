@@ -4,7 +4,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_system_controls"
     android:persistent="false"
-    android:title="@string/accessibility_system_controls_title">
+    android:title= " ">
 
     <Preference
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
@@ -23,7 +23,8 @@
         settings:searchable="false" />
 
     <SwitchPreference
-        android:key="toggle_power_button_ends_call_preference"
+          android:layout="@layout/SwitchPreferenceFull_Card"
+       android:key="toggle_power_button_ends_call_preference"
         android:persistent="false"
         android:title="@string/accessibility_power_button_ends_call_prerefence_title"
         settings:controller="com.android.settings.accessibility.PowerButtonEndsCallPreferenceController" />
@@ -38,6 +39,7 @@
         settings:keywords="@string/keywords_auto_rotate" />
 
     <Preference
+         android:layout="@layout/settings_preference_solo_card"
         android:fragment="com.android.settings.display.SmartAutoRotatePreferenceFragment"
         android:key="device_state_auto_rotate_accessibility"
         android:persistent="false"
