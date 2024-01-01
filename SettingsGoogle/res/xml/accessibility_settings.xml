@@ -4,19 +4,22 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:key="accessibility_settings_screen"
     android:persistent="false"
-    android:title="@string/accessibility_settings">
+    android:title=" ">
 
     <PreferenceCategory
+        settings:layout="@layout/afterlab_preference_category"
         android:key="user_installed_services_category"
         android:persistent="false"
         android:title="@string/user_installed_services_category_title" />
 
     <PreferenceCategory
+        settings:layout="@layout/afterlab_preference_category"
         android:key="screen_reader_category"
         android:persistent="false"
         android:title="@string/screen_reader_category_title" />
 
     <PreferenceCategory
+        settings:layout="@layout/afterlab_preference_category"
         android:key="display_category"
         android:persistent="false"
         android:title="@string/display_category_title">
@@ -38,7 +41,8 @@
             settings:searchable="true" />
 
         <com.android.settingslib.PrimarySwitchPreference
-            android:fragment="com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment"
+             android:layout="@layout/SwitchPreferenceFull_Card"
+           android:fragment="com.android.settings.accessibility.ToggleReduceBrightColorsPreferenceFragment"
             android:icon="@drawable/ic_reduce_bright_colors"
             android:key="reduce_bright_colors_preference"
             android:persistent="false"
@@ -58,6 +62,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        settings:layout="@layout/afterlab_preference_category"
         android:key="interaction_control_category"
         android:persistent="false"
         android:title="@string/interaction_control_category_title">
@@ -89,6 +94,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        settings:layout="@layout/afterlab_preference_category"
         android:key="captions_category"
         android:persistent="false"
         android:title="@string/captions_category_title">
@@ -122,10 +128,12 @@
 
     <PreferenceCategory
         android:key="audio_category"
+        settings:layout="@layout/afterlab_preference_category"
         android:persistent="false"
         android:title="@string/audio_category_title">
 
         <SwitchPreference
+            android:layout="@layout/SwitchPreferenceFull_Card"
             android:icon="@drawable/ic_audio_description"
             android:key="toggle_audio_description"
             android:persistent="false"
@@ -155,6 +163,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        settings:layout="@layout/afterlab_preference_category"
         android:persistent="false"
         android:title="@string/general_category_title">
 
