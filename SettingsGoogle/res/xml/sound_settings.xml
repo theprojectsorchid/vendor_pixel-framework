@@ -39,13 +39,13 @@
     </PreferenceCategory>
 
     <!-- Media volume -->
-    <com.android.settings.preferences.ui.AdaptiveVolumeSeekBarPreference
+    <com.android.settings.notification.VolumeSeekBarPreference
+        android:layout="@layout/dot_preference_top_card_progress"
         android:key="media_volume"
         android:icon="@drawable/ic_media_stream"
         android:title="@string/media_volume_option_title"
         android:order="-180"
-        settings:controller="com.android.settings.notification.MediaVolumePreferenceController"
-        settings:position="top"/>
+        settings:controller="com.android.settings.notification.MediaVolumePreferenceController"/>
 
     <!-- Media output switcher -->
     <com.android.settings.preferences.ui.AdaptivePreference
@@ -58,13 +58,13 @@
         settings:position="middle"/>
 
     <!-- Call volume -->
-    <com.android.settings.preferences.ui.AdaptiveVolumeSeekBarPreference
+    <com.android.settings.notification.VolumeSeekBarPreference
+        android:layout="@layout/dot_preference_top_card_progress"
         android:key="call_volume"
         android:icon="@drawable/ic_local_phone_24_lib"
         android:title="@string/call_volume_option_title"
         android:order="-170"
-        settings:controller="com.android.settings.notification.CallVolumePreferenceController"
-        settings:position="middle"/>
+        settings:controller="com.android.settings.notification.CallVolumePreferenceController" />
 
     <!-- Hands free profile output switcher -->
     <com.android.settings.preferences.ui.AdaptiveListPreference
@@ -77,37 +77,37 @@
         settings:position="middle"/>
 
     <!-- Ring volume -->
-    <com.android.settings.preferences.ui.AdaptiveVolumeSeekBarPreference
+    <com.android.settings.notification.VolumeSeekBarPreference
+        android:layout="@layout/dot_preference_top_card_progress"
         android:key="ring_volume"
         android:title="@string/ring_volume_option_title"
         android:order="-160"
-        settings:controller="com.android.settings.notification.RingVolumePreferenceController"
-        settings:position="middle"/>
+        settings:controller="com.android.settings.notification.RingVolumePreferenceController" />
 
     <!-- Separate Ring volume -->
-    <com.android.settings.preferences.ui.AdaptiveVolumeSeekBarPreference
-        android:key="separate_ring_volume"
+    <com.android.settings.notification.VolumeSeekBarPreference
+         android:layout="@layout/dot_preference_middle_card_progress"
+     android:key="separate_ring_volume"
         android:title="@string/separate_ring_volume_option_title"
         android:order="-155"
-        settings:position="middle"
         settings:controller="com.android.settings.notification.SeparateRingVolumePreferenceController"/>
 
     <!-- Notification volume -->
-    <com.android.settings.preferences.ui.AdaptiveVolumeSeekBarPreference
-        android:key="notification_volume"
+    <com.android.settings.notification.VolumeSeekBarPreference
+         android:layout="@layout/dot_preference_middle_card_progress"
+       android:key="notification_volume"
         android:title="@string/notification_volume_option_title"
         android:order="-150"
-        settings:position="middle"
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"
         settings:unavailableSliceSubtitle="@string/notification_volume_disabled_summary"/>
 
     <!-- Alarm volume -->
-    <com.android.settings.preferences.ui.AdaptiveVolumeSeekBarPreference
+    <com.android.settings.notification.VolumeSeekBarPreference
         android:key="alarm_volume"
+         android:layout="@layout/dot_preference_middle_card_progress"
         android:title="@string/alarm_volume_option_title"
         android:order="-140"
-        settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"
-        settings:position="bottom"/>
+        settings:controller="com.android.settings.notification.AlarmVolumePreferenceController"/>
 
 
     <!-- Increasing ring -->
