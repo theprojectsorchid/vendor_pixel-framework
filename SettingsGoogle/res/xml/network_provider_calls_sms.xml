@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:key="provider_model_calls_and_sms_screen"
-    android:title="@string/calls_and_sms">
+     android:key="provider_model_calls_and_sms_screen"
+   xmlns:settings="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title=" " >
+
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="call_sms_animation"
+        settings:searchable="false"
+        android:order="-999"
+        app:lottie_rawRes="@raw/call_sms"/>
+
 
     <ListPreference
         android:icon="@drawable/ic_phone"
@@ -20,21 +29,24 @@
         settings:controller="com.android.settings.network.telephony.SmsDefaultSubscriptionController" />
 
     <PreferenceCategory
-        android:key="provider_model_calling_category"
+         settings:layout="@layout/afterlab_preference_category"
+android:key="provider_model_calling_category"
         android:order="20"
         android:title="@string/calls_and_sms_category"
         settings:allowDividerAbove="true"
         settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController" />
 
     <PreferenceCategory
-        android:key="provider_model_backup_calling_category"
+            settings:layout="@layout/afterlab_preference_category"
+     android:key="provider_model_backup_calling_category"
         android:order="25"
         android:title="@string/backup_calling_settings_title"
         settings:allowDividerAbove="true"
         settings:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController" />
 
     <PreferenceCategory
-        android:key="connectivity_helper_call_quality_category"
+            settings:layout="@layout/afterlab_preference_category"
+     android:key="connectivity_helper_call_quality_category"
         android:order="30"
         android:title="@string/connectivity_helper_call_quality_category"
         settings:allowDividerAbove="true">
